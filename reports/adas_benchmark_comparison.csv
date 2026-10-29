@@ -1,0 +1,19 @@
+system,total_steps,true_hazard_steps,true_safe_steps,tp_warnings,fp_warnings,tn_safe,fn_unsafe_advice,unsafe_advice_rate_pct,hazard_warning_recall_pct,false_warning_rate_pct,warning_lead_time_s,min_ground_truth_clearance_m,min_time_margin_s,abort_triggered,abort_success,collision_occurred,scenario
+overtakeguard,60,0,60,0,0,60,0,0.0,100.0,0.0,0.0,20.2,983.3,False,False,False,Scenario 1: Clear Road & Safe Overtake
+ttc_baseline,60,0,60,0,0,60,0,0.0,100.0,0.0,0.0,20.2,993.0,False,False,False,Scenario 1: Clear Road & Safe Overtake
+naive_baseline,60,0,60,0,0,60,0,0.0,100.0,0.0,0.0,20.2,993.0,False,False,False,Scenario 1: Clear Road & Safe Overtake
+overtakeguard,40,40,0,40,0,0,0,0.0,100.0,0.0,3.9,21.4,-15.22,False,False,False,Scenario 2: Approaching Oncoming Vehicle
+ttc_baseline,40,40,0,40,0,0,0,0.0,100.0,0.0,3.9,21.4,-5.4,False,False,False,Scenario 2: Approaching Oncoming Vehicle
+naive_baseline,40,40,0,38,0,0,2,5.0,95.0,0.0,3.7,21.4,-5.4,False,False,False,Scenario 2: Approaching Oncoming Vehicle
+overtakeguard,45,39,6,39,6,0,0,0.0,100.0,100.0,3.4,2.0,-17.09,False,False,False,Scenario 3: Hidden Oncoming Vehicle Behind Truck
+ttc_baseline,45,39,6,16,0,6,23,58.97,41.03,0.0,3.4,2.0,-5.99,False,False,False,Scenario 3: Hidden Oncoming Vehicle Behind Truck
+naive_baseline,45,39,6,17,0,6,22,56.41,43.59,0.0,3.4,2.0,-5.99,False,False,False,Scenario 3: Hidden Oncoming Vehicle Behind Truck
+overtakeguard,50,30,20,30,1,19,0,0.0,100.0,5.0,2.6,2.0,-15.59,True,True,False,Scenario 4: Emerging Hazard During Overtake (Abort)
+ttc_baseline,50,30,20,25,0,20,5,16.67,83.33,0.0,2.6,2.0,-5.95,True,True,False,Scenario 4: Emerging Hazard During Overtake (Abort)
+naive_baseline,50,30,20,27,0,20,3,10.0,90.0,0.0,2.6,2.0,-5.95,True,True,False,Scenario 4: Emerging Hazard During Overtake (Abort)
+overtakeguard,40,40,0,40,0,0,0,0.0,100.0,0.0,3.9,3.4,-15.28,False,False,False,Scenario 5: Radar Degradation in Heavy Rain
+ttc_baseline,40,40,0,20,0,0,20,50.0,50.0,0.0,3.6,3.4,-5.82,False,False,False,Scenario 5: Radar Degradation in Heavy Rain
+naive_baseline,40,40,0,23,0,0,17,42.5,57.5,0.0,3.6,3.4,-5.82,False,False,False,Scenario 5: Radar Degradation in Heavy Rain
+overtakeguard,40,38,2,38,1,1,0,0.0,100.0,50.0,3.3,2.0,-15.69,False,False,False,Scenario 6: Conflicting Camera & Radar (Glare)
+ttc_baseline,40,38,2,33,0,2,5,13.16,86.84,0.0,3.3,2.0,-5.99,False,False,False,Scenario 6: Conflicting Camera & Radar (Glare)
+naive_baseline,40,38,2,33,0,2,5,13.16,86.84,0.0,3.3,2.0,-5.99,False,False,False,Scenario 6: Conflicting Camera & Radar (Glare)
